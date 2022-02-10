@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>TOKO ONLINE</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="style/main.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div class="page-dashboard">
+      <div class="d-flex" id="wrapper" data-aos="fade-right">
+        <div class="border-right" id="sidebar-wrapper">
+          <div class="sidebar-heading text-center">
+            <img src="images/logo.svg" alt="logo-toko" class="my-4">
+          </div>
+          <div class="list-group list-group-flush">
+            <a href="dashboard.html" class="list-group-item list-group-item-action ">Dashboard</a>
+            <a href="dashboard-products.html" class="list-group-item list-group-item-action ">My Products</a>
+            <a href="dashboard-transactions.html" class="list-group-item list-group-item-action ">Transactions</a>
+            <a href="dashboard-setting.html" class="list-group-item list-group-item-action active">Store Settings</a>
+            <a href="dashboard-account.html" class="list-group-item list-group-item-action ">My Account</a>
+          </div>
+        </div>
+        <div id="page-content-wrapper">
+          <nav
+            class="navbar navbar-expand-lg navbar-light navbar-store fixed-top"
+            data-aos="fade-down"
+            aria-label="Navbar"
+          >
+            <div class="container-fluid">
+              <button class="btn btn-secondary d-md-none mr-auto mr-2" id="menu-toggle">
+                &laquo; Menu
+              </button>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarResponsive"
+                aria-controls="navbarResponsive"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                <!-- Desktop Menu -->
+                <ul class="navbar-nav d-none d-lg-flex ml-auto">
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      <img
+                        src="images/icon-user.png"
+                        alt=""
+                        class="rounded-circle mr-2 profile-picture"
+                      />
+                      Hi, Angga
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="dashboard.html">Dashboard</a>
+                      <a class="dropdown-item" href="dashboard-account.html"
+                        >Settings</a
+                      >
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="/">Logout</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link d-inline-block mt-2" href="#">
+                      <img src="images/icon-cart-filled.svg" alt="" />
+                      <div class="card-badge">3</div>
+                    </a>
+                  </li>
+                </ul>
+
+                <!-- Mobile Menu -->
+                <ul class="navbar-nav d-block d-lg-none">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      Hi, Angga
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link d-inline-block" href="#">
+                      Cart
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="section-content section-dashboard-home" data-aos="fade-up">
+            <div class="container-fluid">
+              <div class="dashboard-heading">
+                <h2 class="dashboard-title">#STORE0839</h2>
+                  <p class="dashboard-subtitle">Transaction Details</p>
+              </div>
+              <div class="dashboard-content" id="transactionDetails">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-12 col-md-4">
+                            <img class="w-100 mb-3" src="images/product-card-1.png" alt="">
+                          </div>
+                          <div class="col-12 col-md-6">
+                            <div class="row">
+                              <div class="col-md-6 mb-3">
+                                <div class="dashboard-subtitle">Customer Name</div>
+                                <div class="product-title">Angga Risky</div>
+                              </div>
+                              <div class="col-md-6 mb-3">
+                                <div class="dashboard-subtitle">Product Name</div>
+                                <div class="product-title">Shirup Marzzan</div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-6 mb-3">
+                                <div class="dashboard-subtitle">Date of Transaction</div>
+                                <div class="product-title">12 Januari, 2020</div>
+                              </div>
+                              <div class="col-md-6 mb-3">
+                                <div class="dashboard-subtitle">Status</div>
+                                <div class="product-title text-danger">Pending</div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-6 mb-3">
+                                <div class="dashboard-subtitle">Total Amount</div>
+                                <div class="product-title">$280,409</div>
+                              </div>
+                              <div class="col-md-6 mb-3">
+                                <div class="dashboard-subtitle">Mobile</div>
+                                <div class="product-title">+628 2020 11111</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-12">
+                            <h5 class="mb-3 mt-2">Shipping Information</h5>
+                          </div>
+                          <div class="col-12 col-md-4 mb-2 mt-2">
+                            <div class="dashboard-subtitle">Address I</div>
+                            <div class="product-title">Setra Duta Cemara</div>
+                          </div>
+                          <div class="col-12 col-md-8 mb-2 mt-2">
+                            <div class="dashboard-subtitle">Address II</div>
+                                <div class="product-title">Blok B2 No. 34</div>
+                          </div>
+                          <div class="col-12 col-md-4 mb-2 mt-2">
+                            <div class="dashboard-subtitle">Province</div>
+                            <div class="product-title">West Java</div>
+                          </div>
+                          <div class="col-12 col-md-8 mb-2 mt-2">
+                            <div class="dashboard-subtitle">City</div>
+                                <div class="product-title">Bandung</div>
+                          </div>
+                          <div class="col-12 col-md-4 mb-2 mt-2">
+                            <div class="dashboard-subtitle">Postal Code</div>
+                            <div class="product-title">123999</div>
+                          </div>
+                          <div class="col-12 col-md-8 mb-2 mt-2">
+                            <div class="dashboard-subtitle">Country</div>
+                            <div class="product-title">Indonesia</div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="dashboard-subtitle">Status</div>
+                            <select name="status" id="status" class="form-control" v-model="status">
+                              <option value="UNPAID">Unpaid</option>
+                              <option value="PENDING">Pending</option>
+                              <option value="SHIPPING">Shipping</option>
+                              <option value="SUCCESS">Success</option>
+                            </select>
+                          </div>
+                          <template v-if="status == 'SHIPPING'">
+                            <div class="col-md-4">
+                              <div class="dashboard-subtitle">Input Resi</div>
+                              <input type="text" name="resi" v-model="resi" class="form-control">
+                            </div>
+                            <div class="col-md-5">
+                              <button type="submit" class="btn btn-success btn-block mt-4">Update Resi</button>
+                            </div>
+                          </template>
+                        </div>
+                        <div class="row">
+                          <div class="col-12 text-right">
+                            <button
+                                        type="submit"
+                                        class="btn btn-success mt-4"
+                                      >
+                                        Save Now
+                                      </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script src="vendor/jquery/jquery.slim.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="vendor/vue/vue.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+      });
+
+      var transactionDetails = new Vue({
+        el: '#transactionDetails',
+        data: {
+          status : "SHIPPING",
+          resi: "JNE20839149021029301231",
+        }
+      });
+
+    </script>
+  </body>
+</html>

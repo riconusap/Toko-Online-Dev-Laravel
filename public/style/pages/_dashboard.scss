@@ -1,0 +1,108 @@
+.page-dashboard{
+    #page-content-wrapper{
+        background: #F5F5FB;
+        min-width: 100vw;
+        .dashboard-heading{
+            margin-top: 13px;
+        }
+    }
+    #sidebar-wrapper{
+        margin-top: 60px;
+        min-height: 100vh;
+        margin-left: -15rem;
+        transition: margin 0.25s ease-out;
+        .sidebar-heading{
+            padding: 0.875rem 1.25rem;
+            font-size: 1.2rem;
+        }
+        .list-group{
+            width: 15rem;
+        }
+    }
+    #wrapper{
+        &.toggled{
+            #sidebar-wrapper{
+                margin-left: 0px;
+            }
+        }
+    }
+    .navbar-store{
+        margin-top: 0px;
+        background-color: #F5F5FB;
+        box-shadow: 0px 4px 5px #cacad1;
+        @include media-breakpoint-up(md){
+            background: transparent;
+            box-shadow: none;
+        }   
+    }
+    .list-group-item{
+        border: 0;
+        font-size: 16px;
+        color: #C5C5C5;
+        &.active{
+            background: linear-gradient(270deg, rgba(255, 113, 88, 0.32) 2%, rgba(255, 255, 255, 0) 100%);
+            border-right: 4px solid #FF7158;
+            color: #0C0D36            ;
+        }
+    }
+
+    @include media-breakpoint-up(md){
+        #sidebar-wrapper{
+            margin-left: 0px;
+            margin-top: 0px;
+        }
+        #page-content-wrapper{
+            min-width: 0;
+            width: 100%;
+        }
+        #wrapper{
+            &.toggled{
+                margin-left: -15rem;
+            }
+        }
+    }
+    .section-content{
+        margin-top: 100px;
+        @include media-breakpoint-up(md) {
+            margin-top: 20px;
+            margin-left: 20px;
+          }
+          .dashboard-title {
+            font-weight: normal;
+            font-size: 24px;
+            color: #0c0d36;
+          }
+          .dashboard-subtitle {
+            font-weight: 300;
+            font-size: 16px;
+            color: #9191a9;
+          }
+          .product-title{
+            font-size: 18px;
+            line-height: 27px;
+            color: #0c0d36;
+          }
+          
+    }
+    .nav-pills {
+        .nav-link {
+          font-size: 18px;
+          color: #9191a9;
+          border-radius: 0;
+          &.active {
+            color: #0c0d36;
+            border-bottom: 2px solid #0c0d36;
+            background: none;
+          }
+        }
+    }
+    .gallery-container{
+          .delete-gallery{
+              display: block;
+              position: absolute;
+              top: -10px;
+              right: 5px;
+          }
+    }
+    
+}
