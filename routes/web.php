@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Auth\RegisterController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,17 +16,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/debug-sentry', function () {
-    throw new Exception('My first Sentry error!');
+    return view('pages.home');
 });
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/categories', [App\Http\Controllers\CategoriesController::class, 'index'])->name('categories');
+Route::get('/details/{id}', [App\Http\Controllers\ProductDetails::class, 'index'])->name('details');
+Route::get('/cart', [App\Http\Controllers\CartController::class, 'index'])->name('cart');
+Route::get('/success', [App\Http\Controllers\CartController::class, 'success'])->name('success');
+Route::get('/register/success', [App\Http\Controllers\Auth\RegisterController::class, 'success'])->name('register-success');
